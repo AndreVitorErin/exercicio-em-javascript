@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body {
+            background-color: rgba(7, 88, 180, 0.548);
+            color: azure;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 id = "ttl">Iniciando Estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <div id ="msg">Clique em mim</div>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]//p - tag p (paragráfo), o "0" dentro do colchete representa o primeiro parágrafo.
+        window.document.write('Está escrito assim: ' + p1.innerText) //p1.innerText - texto que está dentro de p1
+        var p2 = window.document.getElementsByTagName('p')[1]
+        window.document.write('<br>Somente o texto é: ' + p2.innerText) 
+        window.document.write('<br>Captando as tags internas trazemos as configurações junto: ' + p2.innerHTML) // além dos textos, traz juntos as configurações, ou seja, o objetos "filhos"
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando'
+        var t = window.document.querySelector('h1#ttl')
+        t.style.color = "yellow"
+
+
+    </script>
+</body>
+</html>
