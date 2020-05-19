@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 4</title>
+    <style>
+        body {
+            font: normal 20px Arial;
+        }
+    </style>
 </head>
 <body>
     <script>
         var nome = window.prompt ("qual é o seu nome?")
-        document.write (<h2>`Seu nome tem ${nome.length} letras`</h2>)
+        document.write (`Olá, <strong>${nome.toUpperCase()}</strong>! Seu nome tem ${nome.length} letras`)
     </script>
 </body>
 </html>
