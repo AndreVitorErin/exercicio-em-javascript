@@ -28,3 +28,8 @@ table, tr, td, th {
 th {
   background-color: #DDD;
 }
+
+.emphasis {
+  font-weight: bold;
+  color: darkgreen;
+}
