@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(63, 131, 240);
+  background-color: #ffc039;
   font: normal 15pt Fira Code;
 }
 
@@ -17,8 +17,13 @@ section {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.486);
 }
 
+div {
+  text-align: center;
+}
+
 footer {
   color: azure;
   text-align: center;
   font-style: italic;
+  font-size: 0.8rem;
 }
