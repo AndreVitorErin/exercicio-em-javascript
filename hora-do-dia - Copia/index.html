@@ -4,13 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Hora do Dia</title>
+    <title>Verificador de Idade</title>
   </head>
   <body>
     <header>
-      <h1>Hora do Dia</h1>
+      <h1>Verificador de Idade</h1>
     </header>
-    <section></section>
+    <section>
+      <div>
+        <p>
+          <label>Ano de Nascimento</label>
+          <input type="number" id="inputYear" min="1900" value="1980" />
+        </p>
+        <p>
+          <label>Gênero</label>
+          <input type="radio" name="radSex" id="inputMale" />
+          <label class="radio" for="inputMale">Masculino</label>
+          <input type="radio" name="radSex" id="inputFemale" />
+          <label class="radio" for="inputFemale">Feminino</label>
+          <input type="radio" name="radSex" id="inputOther" checked />
+          <label class="radio" for="inputOther">NB / Agênero</label>
+        </p>
+        <p>
+          <input id="button" type="button" value="Verificar" />
+        </p>
+      </div>
+
+      <div id="res">
+        <p>Preencha os dados acima para ver o resultado</p>
+      </div>
+    </section>
     <footer>
       <p>&copy; André Vítor Master</p>
     </footer>

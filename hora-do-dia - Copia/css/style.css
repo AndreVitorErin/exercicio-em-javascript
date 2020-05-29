@@ -1,6 +1,6 @@
 body {
   background-color: rgb(63, 131, 240);
-  font: normal 15pt Fira Code;
+  font: normal 12pt Fira Code;
 }
 
 header {
@@ -21,4 +21,14 @@ footer {
   color: azure;
   text-align: center;
   font-style: italic;
+  font-size: 0.9rem;
+}
+
+.radio {
+  font-size: 0.9rem;
+}
+
+#inputYear {
+  width: 70px;
+  margin-left: 50px;
 }
