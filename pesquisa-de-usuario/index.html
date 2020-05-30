@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Pesquisa de Usuários</title>
+  </head>
+  <body>
+    <h1>Pesquisa de Usuários/h1>
+    <div>
+      <form>
+        <label for="txtSearch">Busca</label>
+        <input type="text" id="txtSearch">
+      </form>
+    </div>
+
+    <div class="container">
+      <div class="user-list">
+        <h5><span id="listUser">Nenhum usuário encontrado</span></h5>
+        <div id="tabUser"></div>
+      </div>
+      <div class="user-list">
+        <h5><span id="Estatisticas">Nada a ser exibido</span></h5>
+        <div id="tabEstatisticas">
+          <span id="totalMasculino"></span>
+          <span id="totalFeminino"></span>
+          <span id="somaIdades"></span>
+          <span id="mediaIdades "></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
